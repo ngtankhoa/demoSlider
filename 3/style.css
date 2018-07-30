@@ -135,7 +135,9 @@ div.description{
 .description p {
     font-size: 12px;
     text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 5px auto;
+    color: #4c4343
 }
 .productColor {
     width: 120px;
@@ -162,8 +164,10 @@ div.productColor{
 }
 .contentSale{
     width:400px;
-    
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
+    color: #4c4343
     
 }
 .barCode{
@@ -364,4 +368,21 @@ div.productColor{
     .modal-content1 {
         width: 100%;
     }
+}
+
+
+.VN button{
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5%;
+    background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
+}
+
+.EN button{
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5%;
+    background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 }

@@ -167,6 +167,14 @@
                 </div>
             </section>
         </div>
+        <div class="changeLanguage">
+            <div class="VN">
+                <button>TIẾNG VIỆT</button>
+            </div>
+            <div class="EN">
+                <button>ENGLISH</button>
+            </div>
+        </div>
         <div style="clear:both;"></div>
     </div>
     <!--end-->
@@ -217,12 +225,21 @@
                 console.log(x);
                 if(x=="img1"){
                     $("#changeColor").attr("src","img/1.jpg");
+                    $("#img1").css("border","1px solid black");
+                    $("#img2").css("border", "1px solid #dadada");
+                    $("#img3").css("border", "1px solid #dadada");
                 }
                 else if(x=="img2"){
                     $("#changeColor").attr("src","img/2.jpg");
+                    $("#img2").css("border","1px solid black");
+                    $("#img1").css("border", "1px solid #dadada");
+                    $("#img3").css("border", "1px solid #dadada");
                 }
                 else if(x=="img3"){
                     $("#changeColor").attr("src","img/3.jpg");
+                    $("#img3").css("border","1px solid black");
+                    $("#img2").css("border", "1px solid #dadada");
+                    $("#img1").css("border", "1px solid #dadada");
                 }
             });
         });
