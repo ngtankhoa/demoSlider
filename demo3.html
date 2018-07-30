@@ -2,36 +2,24 @@
 <html>
 
 <head>
-
-
-    <!-- testing -->
     <title>Demo 3: Image slider with vertical thumbnails</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ninja-slider.js -->
     <link href="3/ninja-slider.css" rel="stylesheet" />
     <script src="3/ninja-slider.js"></script>
     <link href="3/thumbnail-slider.css" rel="stylesheet" type="text/css" />
     <script src="3/thumbnail-slider.js" type="text/javascript"></script>
     <script src="3/myscript.js"></script>
-
-    <!-- animate.css -->
-    <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  
     <style>
         body {
             font: normal 0.9em Arial;
             color: #223;
             background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
         }
-
         header {
             display: block;
             font-size: 1.2em;
             margin-bottom: 100px;
         }
-
         header a,
         header span {
             display: inline-block;
@@ -44,15 +32,12 @@
             text-align: center;
             height: 20px;
         }
-
         header span {
             background: white;
         }
-
         a {
             color: #1155CC;
         }
-
         .sidenav {
             height: 100%;
             width: 0;
@@ -65,7 +50,6 @@
             transition: 0.5s;
             padding-top: 60px;
         }
-
         .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
@@ -74,11 +58,9 @@
             display: block;
             transition: 0.3s;
         }
-
         .sidenav a:hover {
             color: #f1f1f1;
         }
-
         .sidenav .closebtn {
             position: absolute;
             top: 0;
@@ -86,53 +68,44 @@
             font-size: 36px;
             margin-left: 50px;
         }
-
         .infoProduct .details {
             width: 470px;
             height: 300px;
             border: 2px solid rgb(228, 228, 215);
-            margin-left: 25px;
-            margin-right: 25px;
             background:gainsboro;
             border-radius: 4%;
-
-
+            margin-left: 25px;
+            margin-right: 25px;
         }
-
         .infoProduct .labelNav {
             color: black;
             margin-left: 25px;
         }
-
         .infoProduct .details1 {
             width: 470px;
             height: 100px;
-            border: 1px solid rgb(228, 228, 215);
+            border: 2px solid rgb(228, 228, 215);
+            background:gainsboro;
             border-radius: 4%;
             margin-left: 25px;
             margin-right: 25px;
             display:flex;
-            background:gainsboro;
-            
         }
-
         .infoProduct .details2 {
             width: 470px;
             height: 400px;
-            border: 1px solid rgb(228, 228, 215);
+            border: 2px solid rgb(228, 228, 215);
+            background:gainsboro;
             border-radius: 4%;
             margin-left: 25px;
             margin-right: 25px;
-            background:gainsboro;
         }
-
         select option {
             margin: 40px;
             background: rgba(0, 0, 0, 0.3);
             color: #fff;
             text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
         }
-
         .choosen {
             box-sizing: border-box;
             display: inline-flex;
@@ -157,69 +130,49 @@
             border: 1px solid #dadada;
             border-radius: 2px;
         }
-
         #main {
             width: 1000%;
             margin: 20px auto;
             padding: 20px;
             height: 100%;
             background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
-
-
         }
-
         .description {
             width: 300px;
-
-
             margin-left: 150px;
-
         }
-
         .description p {
             font-size: 12px;
             text-align: justify;
             margin: 5px auto;
         }
-
         .productColor {
             width: 120px;
-
             text-align: center;
             margin-left: 140px;
             margin-top: 40px;
         }
-
         .contentSale{
             width:400px;
             
             padding: 10px;
             
         }
-
         .barCode{
             margin-left: 150px ;
-           
+           margin-top: 20px;
+           margin-right: 20px;
             width: 100px;
-
         }
-        .barCode img{
-            margin: 20px ;
-            
-        }
-
         #myImg {
             border-radius: 5px;
             cursor: pointer;
             transition: 0.3s;
         }
-
         #myImg:hover {
             opacity: 0.7;
         }
-
         /* The Modal (background) */
-
         .modal {
             display: none;
             /* Hidden by default */
@@ -242,18 +195,14 @@
             background-color: rgba(0, 0, 0, 0.9);
             /* Black w/ opacity */
         }
-
         /* Modal Content (image) */
-
         .modal-content {
             margin: auto;
             display: block;
             width: 80%;
             max-width: 700px;
         }
-
         /* Caption of Modal Image */
-
         #caption {
             margin: auto;
             display: block;
@@ -264,9 +213,7 @@
             padding: 10px 0;
             height: 150px;
         }
-
         /* Add Animation */
-
         .modal-content,
         #caption {
             -webkit-animation-name: zoom;
@@ -274,7 +221,6 @@
             animation-name: zoom;
             animation-duration: 0.6s;
         }
-
         @-webkit-keyframes zoom {
             from {
                 -webkit-transform: scale(0)
@@ -283,7 +229,6 @@
                 -webkit-transform: scale(1)
             }
         }
-
         @keyframes zoom {
             from {
                 transform: scale(0)
@@ -292,9 +237,7 @@
                 transform: scale(1)
             }
         }
-
         /* The Close Button */
-
         .close {
             position: absolute;
             top: 15px;
@@ -304,18 +247,113 @@
             font-weight: bold;
             transition: 0.3s;
         }
-
         .close:hover,
         .close:focus {
             color: #bbb;
             text-decoration: none;
             cursor: pointer;
         }
-
         /* 100% Image Width on Smaller Screens */
-
         @media only screen and (max-width: 700px) {
             .modal-content {
+                width: 100%;
+            }
+        }
+
+
+        /* map-------------------------------------- */
+        #myImg1 {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #myImg1:hover {
+            opacity: 0.7;
+        }
+        /* The Modal (background) */
+        .modal1 {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 40;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+        /* Modal Content (image) */
+        .modal-content1 {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        /* Caption of Modal Image */
+        #caption1 {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+        /* Add Animation */
+        .modal-content1,
+        #caption1 {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+        /* The Close Button */
+        .close1 {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close1:hover,
+        .close1:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content1 {
                 width: 100%;
             }
         }
@@ -408,7 +446,7 @@
                 </ul>
                 <!-- <span style="font-size:30px;cursor:pointer; z-index: 2;" onclick="openNav()">&#9776; open</span> -->
 
-                <div class="fs-icon-2 animated infinite pulse test" style="bottom: 20px; right: 30px; animation-duration: 3s;" onclick="openNav()"><img src="sun.jpg" alt="sun"></div>
+                <div class="fs-icon-2" style="bottom: 20px; right: 30px" onclick="openNav()"><img src="sun.jpg" alt="sun"></div>
                 <div class="fs-icon-2" style="top: 50px; right: 20px" onclick="openNav()"><img src="red.jpg" alt="red"></div>
                 <div class="fs-icon-2" style="top: 40px; left: 20px" onclick="openNav()"> <img src="linux.png" alt = "linux"> </div>
                 <div class="fs-icon-2" style="bottom: 60px; left: 30px" onclick="openNav()"><img src="gray_v2.svg.png" alt="gray"></div>
@@ -445,12 +483,11 @@
                 <h1 class="labelNav">Khuyến mãi</h1>
                 <div class="details1">
                     <div class="contentSale">
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy </span>
-                           
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy </p>
                     </div>
                     <div class="barCode">
-                       <span> <img src="img/code.jpg" alt="barCode" width="60px;" height="60px;" id="myImg"></span>
+                        <img src="img/code.jpg" alt="barCode" width="60px;" height="60px;" id="myImg">
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span class="close">&times;</span>
@@ -463,14 +500,15 @@
                 <h1 class="labelNav">Chỉ đường</h1>
                 <div class="details2">
                     <div class="Map" style="margin:20px ">
-                        <span> <img src="img/code.jpg" alt="barCode" width="430px;" height="400px;" id="myImg"></span>
+                        <span> <img src="img/code.jpg" alt="barCode" width="430px;" height="400px;" id="myImg1"></span>
                          <!-- The Modal -->
-                         <div id="myModal" class="modal">
-                             <span class="close">&times;</span>
-                             <img class="modal-content" id="img01">
-                             <div id="caption"></div>
+                         <div id="myModal1" class="modal1">
+                             <span class="close1">&times;</span>
+                             <img class="modal-content1" id="img02">
+                             <div id="caption1"></div>
                          </div>
                      </div>
+
                 </div>
             </section>
         </div>
@@ -480,10 +518,8 @@
     <script  type="text/javascript" >
         
         
-
         // Get the modal
         var modal = document.getElementById('myModal');
-
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         var img = document.getElementById('myImg');
         var modalImg = document.getElementById("img01");
@@ -493,15 +529,31 @@
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
         }
-
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-
         // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
             modal.style.display = "none";
         }
 
+
+        // Get the modal
+        var modal1 = document.getElementById('myModal1');
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img1 = document.getElementById('myImg1');
+        var modalImg1 = document.getElementById("img02");
+        var captionText1 = document.getElementById("caption1");
+        img1.onclick = function () {
+            modal1.style.display = "block";
+            modalImg1.src = this.src;
+            captionText1.innerHTML = this.alt;
+        }
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close1")[0];
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function () {
+            modal1.style.display = "none";
+        }
     </script>
 </body>
 
