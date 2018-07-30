@@ -14,6 +14,31 @@
     background:black;
 }
 
+/* dat css cho cac thumbnail trong slider-inner */
+div.fs-icon-2 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* test icon moi, khong phu thuoc vao fs-icon */
+#ninja-slider div.fs-icon-2 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index:2;
+    color:white;
+    text-align:center;
+    font:bold 11px/26px arial;    
+    -webkit-transition:opacity 0.8s;
+    transition:opacity 0.8s;
+}
+
+div.fs-icon-2:hover {
+    cursor: pointer;
+}
+
+
 #ninja-slider div.fs-icon {
     /* top:10px;
     right:6px; */
@@ -21,17 +46,18 @@
     height:26px; */
     width: auto;
     height: auto;
-    background: rgba(0,0,0,0.3);
+    /* background: rgba(0,0,0,0.3); */
     z-index:2;
     color:white;
     text-align:center;
     font:bold 11px/26px arial;
-    border:1px solid rgba(255,255,255,0.3);
-    border-radius:2px;
-    opacity:0;
+    /* border:1px solid rgba(255,255,255,0.3); */
+    /* border-radius:2px;    */
+    /* opacity:0.5; */
     -webkit-transition:opacity 0.8s;
     transition:opacity 0.8s;
 }
+
 
 #ninja-slider div.fs-icon-1 {
     top:10px;
