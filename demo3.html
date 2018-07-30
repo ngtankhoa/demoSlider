@@ -137,9 +137,12 @@
             height: 100%;
             background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
         }
-        .description {
-            width: 300px;
-            margin-left: 150px;
+        .details .description {
+            width: 250px;
+            
+        }
+        div.description{
+            display: inline-block;
         }
         .description p {
             font-size: 12px;
@@ -148,9 +151,26 @@
         }
         .productColor {
             width: 120px;
-            text-align: center;
-            margin-left: 140px;
-            margin-top: 40px;
+            padding-top: 10px;
+           
+           
+           
+            
+        }
+        div.productColor{
+            display: inline-block;
+        }
+        .testKhoi{
+            width: 300px;
+            margin: 10px auto;
+            float: right;
+            
+        }
+        .imageProduct{
+            display: inline-block;
+            width: 120px;
+            padding-left: 20px;
+            padding-top: 28px;
         }
         .contentSale{
             width:400px;
@@ -457,10 +477,11 @@
             <section class="infoProduct">
                 <h1 class="labelNav">Thông tin sản phẩm</h1>
                 <div class="details">
-                    <p style="margin-left: 10px;">ahihi</p>
+                    
                     <div class="imageProduct">
-
+                        <img src="img/1.jpg" alt="h1" width="130px" height="220px">
                     </div>
+                    <div class="testKhoi">
                     <div class="productColor">
                         <span class="choosen" style="background-color: blue;" onclick="choose()"></span>
                         <span class="choosen" style="background-color: red;" onclick="choose() "></span>
@@ -477,8 +498,9 @@
 
 
                     <div class="productPrice">
-
+                        <p>25000VND</p>
                     </div>
+                </div>
                 </div>
                 <h1 class="labelNav">Khuyến mãi</h1>
                 <div class="details1">
