@@ -14,6 +14,11 @@
     background:black;
 }
 
+/* class for testing purpose */
+.test {
+    border: 1px solid green;
+}
+
 /* dat css cho cac thumbnail trong slider-inner */
 div.fs-icon-2 img {
     height: 100px;
