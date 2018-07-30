@@ -12,7 +12,7 @@
         body {
             font: normal 0.9em Arial;
             color: #223;
-            background: -webkit-gradient(linear, left top, left bottom, from(	#ebe0e0), to(#a6a6a6)) fixed;
+            background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
         }
 
         header {
@@ -49,7 +49,7 @@
             z-index: 1;
             top: 0;
             right: 0;
-            background: -webkit-gradient(linear, left top, left bottom, from( 	#ebe0e0), to(#666666)) fixed;
+            background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#666666)) fixed;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
@@ -92,15 +92,19 @@
         }
 
         .infoProduct .details1 {
-            width: 220px;
+            width: 470px;
+            height: 100px;
             border: 1px solid yellow;
-            margin: 10px 10px;
+            margin-left: 25px;
+            margin-right: 25px;
         }
 
         .infoProduct .details2 {
-            width: 220px;
+            width: 470px;
+            height: 100px;
             border: 1px solid yellow;
-            margin: 10px 10px;
+            margin-left: 25px;
+            margin-right: 25px;
         }
 
         select option {
@@ -135,30 +139,167 @@
             border-radius: 2px;
         }
 
-        #main{
-            width:1000%;margin:20px auto; padding: 20px; height: 100%;  background: -webkit-gradient(linear, left top, left bottom, from( 	#ebe0e0), to(#a6a6a6)) fixed;
+        #main {
+            width: 1000%;
+            margin: 20px auto;
+            padding: 20px;
+            height: 100%;
+            background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 
 
         }
-        .description{
+
+        .description {
             width: 300px;
 
-            border: 1px solid black;
+
             margin-left: 150px;
-            
+
         }
-        .description p{
+
+        .description p {
             font-size: 12px;
-            text-align:justify;
+            text-align: justify;
             margin: 5px auto;
         }
 
-       
+        .productColor {
+            width: 120px;
+
+            text-align: center;
+            margin-left: 140px;
+            margin-top: 40px;
+        }
+
+        .contentSale{
+            width: 200px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        .barCode{
+            margin-left: 100px auto;
+
+            display: inline-block;
+            height: 100px;
+        }
+
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 40;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div  id="main">
+    <div id="main">
         <div id="thumbnail-slider" style="left: 10px;">
             <div class="inner">
                 <ul>
@@ -243,29 +384,33 @@
                 </ul>
                 <span style="font-size:30px;cursor:pointer; z-index: 2;" onclick="openNav()">&#9776; open</span>
 
-                
+
                 <div class="fs-icon" style="top: 50px; right: 20px" onclick="openNav()">haha</div>
-                <div class="fs-icon" style="top: 40px; left: 20px" onclick="openNav()"> <img src="linux.png" style="height: 100px; width: auto;" alt = "linux"> </div>
+                <div class="fs-icon" style="top: 40px; left: 20px" onclick="openNav()">
+                    <img src="linux.png" style="height: 100px; width: auto;" alt="linux"> </div>
                 <div class="fs-icon" style="bottom: 60px; left: 30px" onclick="openNav()">hihi</div>
             </div>
         </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <section class="infoProduct" >
+            <section class="infoProduct">
                 <h1 class="labelNav">Thông tin sản phẩm</h1>
-                <div class="details" >
+                <div class="details">
                     <p style="margin-left: 10px;">ahihi</p>
                     <div class="imageProduct">
 
                     </div>
-                    <div class="productColor" style="margin-left: 10px;">
-                        <span class="choosen" style="background-color: blue;" onclick="choose()" ></span>
+                    <div class="productColor">
+                        <span class="choosen" style="background-color: blue;" onclick="choose()"></span>
                         <span class="choosen" style="background-color: red;" onclick="choose() "></span>
                         <span class="choosen" style="background-color: yellow;" onclick="choose()"></span>
                     </div>
-                    <div class="description" >
+                    <div class="description">
                         <h3>Váy</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>                        
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
                     </div>
 
@@ -276,7 +421,19 @@
                 </div>
                 <h1 class="labelNav">Khuyến mãi</h1>
                 <div class="details1">
-
+                    <div class="contentSale">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy </p>
+                    </div>
+                    <div class="barCode">
+                        <img src="img/code.jpg" alt="barCode" width="60px;" height="60px;" id="myImg">
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                    </div>
 
                 </div>
                 <h1 class="labelNav">Chỉ đường</h1>
@@ -289,11 +446,11 @@
         <div style="clear:both;"></div>
     </div>
     <!--end-->
-    <script  type="text/javascript" >
+    <script type="text/javascript">
         function openNav() {
             document.getElementById("mySidenav").style.width = "520px";
             document.getElementById("ninja-slider").style.marginLeft = "30px";
-           
+
         }
 
         function closeNav() {
@@ -301,15 +458,35 @@
             document.getElementById("ninja-slider").style.marginLeft = "80px";
         }
 
-        function choose(){
+        function choose() {
             var x = document.getElementsByClassName("choosen");
-            for (var i = 0; i < x.length; i++)
-            {
+            for (var i = 0; i < x.length; i++) {
                 x[i].style.border = "1px solid black";
-                
+
             }
         }
-        
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
     </script>
 </body>
 
