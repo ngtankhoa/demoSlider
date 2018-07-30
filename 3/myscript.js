@@ -1,8 +1,7 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "520px";
     document.getElementById("ninja-slider").style.marginLeft = "20px";
-    // setTimeout(closeNav,3000);
-    // clearTimeout(openNav);
+    setTimeout(closeNav,3000);
 }
 
 function closeNav() {
