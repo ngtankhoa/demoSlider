@@ -479,13 +479,13 @@
                 <div class="details">
                     
                     <div class="imageProduct">
-                        <img src="img/1.jpg" alt="h1" width="130px" height="220px">
+                        <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor">
                     </div>
                     <div class="testKhoi">
                     <div class="productColor">
-                        <span class="choosen" style="background-color: blue;" onclick="choose()"></span>
-                        <span class="choosen" style="background-color: red;" onclick="choose() "></span>
-                        <span class="choosen" style="background-color: yellow;" onclick="choose()"></span>
+                        <span class="choosen" style="background-color: blue;" id="img1"></span>
+                        <span class="choosen" style="background-color: red;" id="img2"></span>
+                        <span class="choosen" style="background-color: yellow;"id="img3" ></span>
                     </div>
                     <div class="description">
                         <h3>Váy</h3>
@@ -537,7 +537,8 @@
         <div style="clear:both;"></div>
     </div>
     <!--end-->
-    <script  type="text/javascript" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script  >
         
         
         // Get the modal
@@ -576,6 +577,22 @@
         span1.onclick = function () {
             modal1.style.display = "none";
         }
+
+        $(document).ready(function(){
+            $(".choosen").click(function(){
+                var x = event.target.id;
+                console.log(x);
+                if(x=="img1"){
+                    $("#changeColor").attr("src","img/1.jpg");
+                }
+                else if(x=="img2"){
+                    $("#changeColor").attr("src","img/2.jpg");
+                }
+                else if(x=="img3"){
+                    $("#changeColor").attr("src","img/3.jpg");
+                }
+            });
+        });
     </script>
 </body>
 
