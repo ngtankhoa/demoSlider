@@ -3,11 +3,13 @@ body {
     color: #223;
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 }
+
 header {
     display: block;
     font-size: 1.2em;
     margin-bottom: 100px;
 }
+
 header a,
 header span {
     display: inline-block;
@@ -20,12 +22,43 @@ header span {
     text-align: center;
     height: 20px;
 }
+
 header span {
     background: white;
 }
 a {
     color: #1155CC;
 }
+
+/* class for testing purpose */
+.test {
+    border: 1px solid green;
+}
+
+/* dat css cho cac thumbnail trong slider-inner */
+div.fs-icon-2 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* test icon moi, khong phu thuoc vao fs-icon */
+#ninja-slider div.fs-icon-2 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index:1;
+    color:white;
+    text-align:center;
+    font:bold 11px/26px arial;    
+    -webkit-transition:opacity 0.8s;
+    transition:opacity 0.8s;
+}
+
+div.fs-icon-2:hover {
+    cursor: pointer;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -38,6 +71,7 @@ a {
     transition: 0.5s;
     padding-top: 60px;
 }
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -46,9 +80,11 @@ a {
     display: block;
     transition: 0.3s;
 }
+
 .sidenav a:hover {
     color: #f1f1f1;
 }
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -56,6 +92,7 @@ a {
     font-size: 36px;
     margin-left: 50px;
 }
+
 .infoProduct .details {
     width: 470px;
     height: 300px;
@@ -65,10 +102,12 @@ a {
     margin-left: 25px;
     margin-right: 25px;
 }
+
 .infoProduct .labelNav {
     color: black;
     margin-left: 25px;
 }
+
 .infoProduct .details1 {
     width: 470px;
     height: 100px;
@@ -79,6 +118,7 @@ a {
     margin-right: 25px;
     display:flex;
 }
+
 .infoProduct .details2 {
     width: 470px;
     height: 400px;
@@ -88,12 +128,14 @@ a {
     margin-left: 25px;
     margin-right: 25px;
 }
+
 select option {
     margin: 40px;
     background: rgba(0, 0, 0, 0.3);
     color: #fff;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
+
 .choosen {
     box-sizing: border-box;
     display: inline-flex;
@@ -118,6 +160,7 @@ select option {
     border: 1px solid #dadada;
     border-radius: 2px;
 }
+
 #main {
     width: 1000%;
     margin: 20px auto;
@@ -125,13 +168,16 @@ select option {
     height: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 }
+
 .details .description {
     width: 250px;
     
 }
+
 div.description{
     display: inline-block;
 }
+
 .description p {
     font-size: 12px;
     text-align: justify;
@@ -139,6 +185,7 @@ div.description{
     margin: 5px auto;
     color: #4c4343
 }
+
 .productColor {
     width: 120px;
     padding-top: 10px;
@@ -147,21 +194,25 @@ div.description{
    
     
 }
+
 div.productColor{
     display: inline-block;
 }
+
 .testKhoi{
     width: 300px;
     margin: 10px auto;
     float: right;
     
 }
+
 .imageProduct{
     display: inline-block;
     width: 120px;
     padding-left: 20px;
     padding-top: 28px;
 }
+
 .contentSale{
     width:400px;
     font-size: 12px;
@@ -170,20 +221,24 @@ div.productColor{
     color: #4c4343
     
 }
+
 .barCode{
     margin-left: 150px ;
    margin-top: 20px;
    margin-right: 20px;
     width: 100px;
 }
+
 #myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
+
 #myImg:hover {
     opacity: 0.7;
 }
+
 /* The Modal (background) */
 .modal {
     display: none;
@@ -207,6 +262,7 @@ div.productColor{
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
 }
+
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
@@ -214,6 +270,7 @@ div.productColor{
     width: 80%;
     max-width: 700px;
 }
+
 /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -225,6 +282,7 @@ div.productColor{
     padding: 10px 0;
     height: 150px;
 }
+
 /* Add Animation */
 .modal-content,
 #caption {
@@ -233,6 +291,7 @@ div.productColor{
     animation-name: zoom;
     animation-duration: 0.6s;
 }
+
 @-webkit-keyframes zoom {
     from {
         -webkit-transform: scale(0)
@@ -241,6 +300,7 @@ div.productColor{
         -webkit-transform: scale(1)
     }
 }
+
 @keyframes zoom {
     from {
         transform: scale(0)
@@ -249,6 +309,7 @@ div.productColor{
         transform: scale(1)
     }
 }
+
 /* The Close Button */
 .close {
     position: absolute;
@@ -259,12 +320,14 @@ div.productColor{
     font-weight: bold;
     transition: 0.3s;
 }
+
 .close:hover,
 .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
     .modal-content {
@@ -279,9 +342,11 @@ div.productColor{
     cursor: pointer;
     transition: 0.3s;
 }
+
 #myImg1:hover {
     opacity: 0.7;
 }
+
 /* The Modal (background) */
 .modal1 {
     display: none;
@@ -305,6 +370,7 @@ div.productColor{
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
 }
+
 /* Modal Content (image) */
 .modal-content1 {
     margin: auto;
@@ -312,6 +378,7 @@ div.productColor{
     width: 80%;
     max-width: 700px;
 }
+
 /* Caption of Modal Image */
 #caption1 {
     margin: auto;
@@ -323,6 +390,7 @@ div.productColor{
     padding: 10px 0;
     height: 150px;
 }
+
 /* Add Animation */
 .modal-content1,
 #caption1 {
@@ -331,6 +399,7 @@ div.productColor{
     animation-name: zoom;
     animation-duration: 0.6s;
 }
+
 @-webkit-keyframes zoom {
     from {
         -webkit-transform: scale(0)
@@ -339,6 +408,7 @@ div.productColor{
         -webkit-transform: scale(1)
     }
 }
+
 @keyframes zoom {
     from {
         transform: scale(0)
@@ -347,6 +417,7 @@ div.productColor{
         transform: scale(1)
     }
 }
+
 /* The Close Button */
 .close1 {
     position: absolute;
@@ -357,19 +428,20 @@ div.productColor{
     font-weight: bold;
     transition: 0.3s;
 }
+
 .close1:hover,
 .close1:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
     .modal-content1 {
         width: 100%;
     }
 }
-
 
 .VN button{
     width: 120px;
