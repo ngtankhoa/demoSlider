@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Convert a string into a date object.</h2>
+
+    <div class="banner-section" id="img-container">
+    </div>
+
+    <script>
+        var data = {
+            "images": [{
+                "bannerImg1": "img/1.jpg"
+            },
+            {
+                "bannerImg1": "img/2.jpg"
+            }]
+        };
+        data.images.forEach(function (obj) {
+            var img = new Image();
+            img.src = obj.bannerImg1;
+            img.setAttribute("class", "banner-img");
+            img.setAttribute("alt", "effy");
+            document.getElementById("img-container").appendChild(img);
+        });
+    </script>
+
+</body>
+
+</html>
