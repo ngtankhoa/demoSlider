@@ -93,7 +93,7 @@
     text-align:center;
     margin:0;
     color:white;
-    z-index:10;
+    z-index:1;
     cursor:pointer;
     transition:opacity 0.6s;
     *background-color:#ccc;/*IE7 hack*/
