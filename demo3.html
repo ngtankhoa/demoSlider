@@ -179,7 +179,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h1 class="labelNav">Khuyến mãi</h1>
+                        <h1 class="labelNav" id="test">Khuyến mãi</h1>
                         <div class="details1">
                             <div class="contentSale">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -254,12 +254,12 @@
         });
         
             // Load content H1 sidebar
-            // data.contentHVN.forEach(function(obj){
-            //     var h1 = new Text();
-            //     h1 += "h1 class='labelN" +  obj.contentHVN;
-            //     document.getElementById
+            data.contentHVN.forEach(function(obj){
+                var h1 = new Text();
+                h1 += "h1 class='labelN" +  obj.contentHVN;
+                document.getElementById("test").innerHTML = h1;
 
-            // });
+            });
                 
             
 
