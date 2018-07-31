@@ -29,7 +29,6 @@
 
     <!-- include myscript.js -->
     <script src="3/myscript.js"></script>
-    <script src="3/myscript.js"></script>
 
 </head>
 
@@ -37,7 +36,7 @@
     <div id="main" class="container">
         <div class="row">
             <div class="col-sm-2">
-                <div id="thumbnail-slider" style="left: 10px;">
+                <div id="thumbnail-slider">
                     <div class="inner">
                         <ul>
                             <li>
@@ -90,7 +89,7 @@
             </div>
 
             <div class="col-sm-7">
-                <div id="ninja-slider" style="display: inline-block; margin-left: 100px;">
+                <div id="ninja-slider">
                     <div class="slider-inner">
                         <ul>
                             <li>
@@ -131,15 +130,15 @@
                             </li>
                         </ul>
 
-                        <div class="fs-icon-2" style="bottom: 20px; right: 30px" onclick="openNav()">
+                        <div class="fs-icon-2" id="icon-1" onclick="openNav()">
                             <img src="img/sun.jpg" alt="sun">
                         </div>
-                        <div class="fs-icon-2" style="top: 50px; right: 20px" onclick="openNav()">
+                        <div class="fs-icon-2" id="icon-2" onclick="openNav()">
                             <img src="img/red.jpg" alt="red">
                         </div>
-                        <div class="fs-icon-2" style="top: 40px; left: 20px" onclick="openNav()">
+                        <div class="fs-icon-2" id="icon-3" onclick="openNav()">
                             <img src="img/linux.png" alt="linux"> </div>
-                        <div class="fs-icon-2" style="bottom: 60px; left: 30px" onclick="openNav()">
+                        <div class="fs-icon-2" id="icon-4" onclick="openNav()">
                             <img src="img/gray_v2.svg.png" alt="gray">
                         </div>
                     </div>
@@ -187,7 +186,7 @@
                                         has been the industry's standard dummy </p>
                                 </div>
                                 <div class="barCode">
-                                    <img src="img/code.jpg" alt="barCode" id="myImg" style="width: 100px; height: 100px;">
+                                    <img src="img/code.jpg" alt="barCode" id="myImg">
                                     <!-- The Modal -->
                                     <div id="myModal" class="modal">
                                         <span class="close">&times;</span>
@@ -199,7 +198,7 @@
                         </div>
                         <h1 class="labelNav">Chỉ đường</h1>
                         <div class="details2">
-                            <div class="Map" style="margin:20px">
+                            <div class="Map">
                                 <img class="img-fluid" src="img/code.jpg" alt="barCode" width="430px;" height="400px;" id="myImg1">
                                 <!-- The Modal -->
                                 <div id="myModal1" class="modal1">

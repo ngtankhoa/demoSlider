@@ -55,10 +55,48 @@ div.fs-icon-2 img {
     transition:opacity 0.8s;
 }
 
+/* positon for each icon divide by #ID */
+#icon-1 {
+    bottom: 20px;
+    right: 30px;
+}
+
+#icon-2 {
+    top: 50px;
+    right: 20px;
+}
+
+#icon-3 {
+    top: 40px;
+    left: 20px;
+}
+
+#icon-4 {
+    bottom: 60px;
+    left: 30px;
+}
+
+/* #icon-5 {
+    
+}
+
+#icon-6 {
+    
+}
+
+#icon-7 {
+    
+}
+
+#icon-8 {
+    
+} */
+
 div.fs-icon-2:hover {
     cursor: pointer;
 }
 
+/* sidebar css */
 .sidenav {
     height: 100%;
     width: 0;
@@ -125,6 +163,10 @@ div.fs-icon-2:hover {
     border-radius: 4%;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+.Map {
+    margin: 20px;
 }
 
 select option {
@@ -220,10 +262,11 @@ div.productColor{
 }
 
 .barCode{
-    margin-left: 150px ;
-   margin-top: 20px;
-   margin-right: 20px;
-    /* width: 100px; */
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
 }
 
 #myImg {

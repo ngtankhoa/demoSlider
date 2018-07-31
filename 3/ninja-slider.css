@@ -8,6 +8,9 @@
     margin:0 auto;
     overflow:hidden;
     box-sizing:border-box;
+    display: inline-block;
+    /* them vao */
+    margin-left: 100px;
 }
 
 #ninja-slider.fullscreen {
