@@ -153,8 +153,8 @@
                         <h1 class="labelNav">Thông tin sản phẩm</h1>
                         <div class="details">
 
-                            <div class="imageProduct">
-                                <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor">
+                            <div class="imageProduct" id="loadJsonP">
+                                <!-- <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor"> -->
                             </div>
                             <div class="testKhoi">
                                 <div class="productColor">
@@ -248,10 +248,14 @@
         });
         
             // Load content H1 sidebar
-            data.contentHVN.forEach(function(obj){
-                var h1 = new Text();
-                h1 += "h1 class='labelN" +  obj.contentHVN;
-                document.getElementById("test").innerHTML = h1;
+            var i = 0;
+            data.h1.forEach(function (obj) {
+                var x = "";
+
+                console.log(i++);
+                x += "<h1 class='labelNav'>" +  obj.contentHVN + "</h1>";
+                console.log(x);
+                document.getElementById("test").innerHTML = x;
 
             });
                 
