@@ -105,7 +105,7 @@ div.fs-icon-2:hover {
     top: 0;
     right: 0;
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#666666)) fixed;
-    overflow-x: hidden;
+    overflow-x: auto;
     transition: 0.5s;
     padding-top: 60px;
 }
@@ -155,6 +155,7 @@ div.fs-icon-2:hover {
     margin-left: 25px;
     margin-right: 25px;
     display:flex;
+    justify-content: space-around;
 }
 
 .infoProduct .details2 {
@@ -258,16 +259,16 @@ div.productColor{
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
-    color: #4c4343
+    color: #4c4343;
+    display: flex;
 }
 
-.barCode{
-    margin-left: 150px;
-    margin-top: 20px;
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
+/* .barCode{
 }
+
+.barCode img {
+    display: inline-block;
+} */
 
 #myImg {
     border-radius: 5px;
