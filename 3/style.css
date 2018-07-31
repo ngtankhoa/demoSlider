@@ -496,3 +496,6 @@ div.productColor{
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 }
 
+.changeLanguage{
+    width: 200px;
+}

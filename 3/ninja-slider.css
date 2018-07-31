@@ -1,8 +1,6 @@
-/* Visit http://www.menucool.com/responsive-slider for instructions */
-
 #ninja-slider {
     width:600px;
-    background:#333;
+    background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
     padding: 0px;
     
     margin:0 auto;
@@ -14,7 +12,7 @@
 }
 
 #ninja-slider.fullscreen {
-    background:black;
+    background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 }
 
 
@@ -118,7 +116,7 @@
 
 /* --------- slider image ------- */  
 #ninja-slider .ns-img {
-    background-color:rgba(0,0,0,0.3);
+    background-color:(#a6a6a6);
     background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
 
     /*decorate border*/
@@ -272,5 +270,3 @@
     -webkit-user-select: none;
     user-select: none;
 }
-
-
