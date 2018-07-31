@@ -79,11 +79,11 @@
                     </div>
                 </div>
                 <div class="changeLanguage">
-                    <div class="VN">
-                        <button>TIẾNG VIỆT</button>
+                    <div class="button">
+                        <button class="change" id="VN">TIẾNG VIỆT</button>
                     </div>
-                    <div class="EN">
-                        <button>ENGLISH</button>
+                    <div class="button">
+                        <button class="change" id="EN">ENGLISH</button>
                     </div>
                 </div>
             </div>
@@ -149,11 +149,11 @@
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <section class="infoProduct">
-                        <h1 class="labelNav">Thông tin sản phẩm</h1>
+                        <h1 class="labelNav" id="lbNav1">Thông tin sản phẩm</h1>
                         <div class="details">
 
-                            <div class="imageProduct">
-                                <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor">
+                            <div class="imageProduct" id="loadJsonP">
+                                <!-- <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor"> -->
                             </div>
                             <div class="testKhoi">
                                 <div class="productColor">
@@ -178,7 +178,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h1 class="labelNav" id="test">Khuyến mãi</h1>
+                        <h1 class="labelNav" id="lbNav2">Khuyến mãi</h1>
                         <div class="details1">
                             <div>
                                 <div class="contentSale">
@@ -196,7 +196,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h1 class="labelNav">Chỉ đường</h1>
+                        <h1 class="labelNav" id="lbNav3">Chỉ đường</h1>
                         <div class="details2">
                             <div class="Map">
                                 <img class="img-fluid" src="img/code.jpg" alt="barCode" width="430px;" height="400px;" id="myImg1">
@@ -217,24 +217,59 @@
     <!--end-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <script  >
+
+    <script>
 
         // Load json---------------------------------------------
-        var data = {
-            "images": [{
-                "bannerImg1": "img/4.jpg"
-            }],
-            "h1": [{
-                "contentHVN" : "Thông tin sản phẩm",
-                "contentHVN" : "Khuyến mãi",
-                "contentHVN" : "Chỉ đường",
 
-            }]
-            // {
-            //     "bannerImg1": "img/2.jpg"
-            // }]
-        };
+        // {
+        //     "bannerImg1": "img/2.jpg"
+        // }]
+        var data = {
+                    "images": [{
+                        "bannerImg1": "img/4.jpg"
+                    }],
+                    "h1": [{
+                        "contentHVN1": "Thông tin sản phẩm",
+                        "contentHVN2": "Khuyến mãi",
+                        "contentHVN3": "Chỉ đường",
+                        "contentHEN1": "Product Information",
+                        "contentHEN2": "Sale",
+                        "contentHEN3": "Map",
+
+                    }]
+                };
+        $(document).ready(function () {
+            $(".change").click(function () {
+               
+                var x = event.target.id;
+                console.log(x);
+                if (x == "VN") {
+                    
+                    var y = "<h1 class='labelNav'id='lbNav1'>" +  data.h1[0].contentHVN1 + "</h1>"
+                    var y1 = "<h1 class='labelNav'id='lbNav2'>" +  data.h1[0].contentHVN2 + "</h1>"
+                    var y2= "<h1 class='labelNav' id='lbNav3'>" +  data.h1[0].contentHVN3 + "</h1>"
+                    console.log(y);
+                    console.log(y1);
+                    console.log(y2);
+                    $("#lbNav1").replaceWith(y);
+                    $("#lbNav2").replaceWith(y1);
+                    $("#lbNav3").replaceWith(y2);
+                }
+                else if (x == "EN") {
+                    var y = "<h1 class='labelNav'id='lbNav1'>" +   data.h1[0].contentHEN1 + "</h1>"
+                    var y1 = "<h1 class='labelNav'id='lbNav2'>" +  data.h1[0].contentHEN2 + "</h1>"
+                    var y2= "<h1 class='labelNav'id='lbNav3'>" +   data.h1[0].contentHEN3 + "</h1>"
+                    console.log(y);
+                    $("#lbNav1").replaceWith(y);
+                    $("#lbNav2").replaceWith(y1);
+                    $("#lbNav3").replaceWith(y2);
+                }
+               
+            });
+        });
+
+
         // Load images
         data.images.forEach(function (obj) {
             var img = new Image();
@@ -245,16 +280,20 @@
             img.setAttribute("height", "220px");
             document.getElementById("loadJsonP").appendChild(img);
         });
-        
-            // Load content H1 sidebar
-            data.contentHVN.forEach(function(obj){
-                var h1 = new Text();
-                h1 += "h1 class='labelN" +  obj.contentHVN;
-                document.getElementById("test").innerHTML = h1;
 
-            });
-                
-            
+        // Load content H1 sidebar
+        // var i = 0;
+        // data.h1.forEach(function (obj) {
+        //     var x = "";
+
+        //     console.log(i++);
+        //     x += "<h1 class='labelNav'>" +  obj.contentHVN + "</h1>";
+        //     console.log(x);
+        //     document.getElementsByClassName("labelNav").innerHTML = x;
+
+        // });
+
+
 
 
 

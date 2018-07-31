@@ -483,7 +483,7 @@ div.productColor{
     }
 }
 
-.VN button{
+.button button{
     width: 120px;
     height: 40px;
     margin: 10px;
@@ -491,10 +491,3 @@ div.productColor{
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 }
 
-.EN button{
-    width: 120px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 5%;
-    background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
-}
