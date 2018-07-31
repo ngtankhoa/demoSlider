@@ -218,8 +218,50 @@
     <!--end-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
+    
+    <script  >
 
+        // Load json---------------------------------------------
+        var data = {
+            "images": [{
+                "bannerImg1": "img/4.jpg"
+            }],
+            "h1": [{
+                "contentHVN" : "Thông tin sản phẩm",
+                "contentHVN" : "Khuyến mãi",
+                "contentHVN" : "Chỉ đường",
+
+            }]
+            // {
+            //     "bannerImg1": "img/2.jpg"
+            // }]
+        };
+        // Load images
+        data.images.forEach(function (obj) {
+            var img = new Image();
+            img.src = obj.bannerImg1;
+            img.setAttribute("id", "changeColor");
+            img.setAttribute("alt", "h1");
+            img.setAttribute("width", "130px");
+            img.setAttribute("height", "220px");
+            document.getElementById("loadJsonP").appendChild(img);
+        });
+        
+            // Load content H1 sidebar
+            // data.contentHVN.forEach(function(obj){
+            //     var h1 = new Text();
+            //     h1 += "h1 class='labelN" +  obj.contentHVN;
+            //     document.getElementById
+
+            // });
+                
+            
+
+
+
+
+
+        //----------------------------------------------------------------
         // Get the modal
         var modal = document.getElementById('myModal');
         // Get the image and insert it inside the modal - use its "alt" text as a caption
