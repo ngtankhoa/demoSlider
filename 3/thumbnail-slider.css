@@ -8,6 +8,8 @@
     position:relative;
     -webkit-user-select: none;
     user-select:none;
+    margin-left: 25px;
+    margin-top: 100px;
     
 }
 
@@ -40,7 +42,7 @@
     opacity:1;
     display:block;
     border:3px solid transparent;
-    margin:4px 0; /* Spacing between thumbs*/
+    margin:35px 0; /* Spacing between thumbs*/
 
     transition:all 0.5s;
 
