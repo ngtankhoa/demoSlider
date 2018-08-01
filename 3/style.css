@@ -1,3 +1,6 @@
+html, body, .container-fluid {
+    height: 100%;
+}
 body {
     font: normal 0.9em Arial;
     color: #223;
@@ -269,15 +272,7 @@ div.productColor{
     display: flex;
 }
 
-.barCode{
-    margin-left: 150px;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-.barCode img {
-    width: 100px;
-    height: 100px;
+/* .barCode{
 }
 
 .barCode img {
