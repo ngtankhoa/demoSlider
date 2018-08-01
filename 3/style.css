@@ -115,8 +115,9 @@ div.fs-icon-2:hover {
     transition: 0.5s;
     padding-top: 60px;
 }
-.sidebar h1{
+.sidebar p{
     font-size: 18px;
+    margin-left: 50px;
 }
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -147,6 +148,8 @@ div.fs-icon-2:hover {
     border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-top: 12px;
+    margin-bottom: 18px;
 }
 
 .infoProduct .labelNav {
@@ -162,6 +165,8 @@ div.fs-icon-2:hover {
     border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     display:flex;
     justify-content: space-around;
 }
@@ -172,6 +177,8 @@ div.fs-icon-2:hover {
     border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     width: 470px;
     height: 252px;
 }
@@ -222,10 +229,7 @@ select option {
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 }
 
-.details .description {
-    width: 250px;
-    
-}
+
 
 div.description{
     display: inline-block;
@@ -239,37 +243,46 @@ div.description{
     color: #4c4343
 }
 
-.productColor {
-    width: 120px;
-    padding-top: 10px;
-   
-   
-   
-    
-}
+
 
 div.productColor{
-    display: inline-block;
+    display: block;
+}
+
+.contain{
+  width: 90%;
+  line-height: 365px;
+   
 }
 
 .testKhoi{
-    width: 300px;
-    margin: 10px auto;
-    float: right;
+    /* width: 300px;
+    margin: 10px auto;*/
+    width: 65%;
+    float: left;
+    padding: 15px;    
+    text-align: initial;
+    line-height: normal;
+    margin-top: 60px;
+    
+   
     
 }
 
 .imageProduct{
-    display: inline-block;
-    width: 120px;
-    padding-left: 20px;
-    padding-top: 28px;
+    /* display: inline-block;
+    width: 155px;
+    padding-left: 25px; */
+    width: 35%;
+    float: left;
+    padding: 15px;
+    
 }
 
 .contentSale{
     /* width:400px; */
     font-size: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     color: #4c4343;
     display: flex;
