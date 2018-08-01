@@ -138,7 +138,7 @@ div.fs-icon-2:hover {
     height: 300px;
     border: 2px solid rgb(228, 228, 215);
     background:gainsboro;
-    border-radius: 12%;
+    border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -153,7 +153,7 @@ div.fs-icon-2:hover {
     height: 100px; */
     border: 2px solid rgb(228, 228, 215);
     background:gainsboro;
-    border-radius: 12%;
+    border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
     display:flex;
@@ -163,7 +163,7 @@ div.fs-icon-2:hover {
 .infoProduct .details2 {
     border: 2px solid rgb(228, 228, 215);
     background:gainsboro;
-    border-radius: 12%;
+    border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
 }
