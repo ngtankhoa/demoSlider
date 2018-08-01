@@ -8,7 +8,7 @@
     box-sizing:border-box;
     display: inline-block;
     /* them vao */
-    margin-left: 100px;
+    
 }
 
 #ninja-slider.fullscreen {
@@ -79,6 +79,7 @@
 
 #ninja-slider.fullscreen .slider-inner {
     width:100%;
+   
     max-width:950px;
 }
 
