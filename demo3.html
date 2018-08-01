@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <div id="main" class="container-fluid" >
+    <div id="main" class="container-fluid">
         <div class="row">
             <div class="col-md-3" style="padding-right: 0px;">
                 <div id="thumbnail-slider">
@@ -149,55 +149,56 @@
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <section class="infoProduct">
-                        <h1 class="labelNav" id="lbNav1">Thông tin sản phẩm</h1>
+                        <p class="labelNav" id="lbNav1">THÔNG TIN SẢN PHẨM</p>
                         <div class="details">
-
-                            <div class="imageProduct" id="loadJsonP">
-                                <!-- <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor"> -->
-                            </div>
-                            <div class="testKhoi">
-                                <div class="productColor">
-                                    <span class="choosen" style="background-color: blue;" id="img1"></span>
-                                    <span class="choosen" style="background-color: red;" id="img2"></span>
-                                    <span class="choosen" style="background-color: yellow;" id="img3"></span>
+                            <div class="contain">
+                                <div class="imageProduct" id="loadJsonP">
+                                    <!-- <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor"> -->
                                 </div>
-                                <div class="description">
-                                    <h3>Váy</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                        has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer took a galley of type and scrambled it to make a type specimen book. It has
-                                        survived not only five centuries, but also the leap into electronic typesetting,
-                                        remaining essentially unchanged.
-                                    </p>
+                                <div class="testKhoi">
+                                    <div class="productColor">
+                                        <span class="choosen" style="background-color: blue;" id="img1"></span>
+                                        <span class="choosen" style="background-color: red;" id="img2"></span>
+                                        <span class="choosen" style="background-color: yellow;" id="img3"></span>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Váy</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an unknown printer took a galley of type and scrambled it to make a type specimen
+                                            book. It has survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged.
+                                        </p>
 
-                                </div>
+                                    </div>
 
 
-                                <div class="productPrice">
-                                    <p>25000VND</p>
-                                </div>
-                            </div>
-                        </div>
-                        <h1 class="labelNav" id="lbNav2">Khuyến mãi</h1>
-                        <div class="details1">
-                                <div class="contentSale">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                        has been the industry's standard dummy </p>
-                                </div>
-                                <div class="barCode align-middle">
-                                    <img src="img/code.jpg" alt="barCode" id="myImg" width = "100px" height = "100px">
-                                    <!-- The Modal -->
-                                    <div id="myModal" class="modal">
-                                        <span class="close">&times;</span>
-                                        <img class="modal-content" id="img01">
-                                        <div id="caption"></div>
+                                    <div class="productPrice">
+                                        <p>25000VND</p>
                                     </div>
                                 </div>
+                            </div>
                         </div>
-                        <h1 class="labelNav" id="lbNav3">Chỉ đường</h1>
+                        <p class="labelNav" id="lbNav2">KHUYẾN MÃI</p>
+                        <div class="details1">
+                            <div class="contentSale">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy </p>
+                            </div>
+                            <div class="barCode align-middle">
+                                <img src="img/code.jpg" alt="barCode" id="myImg" width="100px" height="100px">
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="labelNav" id="lbNav3">CHỈ ĐƯỜNG</p>
                         <div class="details2">
                             <div class=" Map">
-                                <img  src="img/map.jpg" alt="barCode" width="430px;" height="230px;" id="myImg1">
+                                <img src="img/map.jpg" alt="barCode" width="430px;" height="230px;" id="myImg1" style="border-radius: 12px;">
                                 <!-- The Modal -->
                                 <div id="myModal1" class="modal1">
                                     <span class="close1">&times;</span>
@@ -224,29 +225,29 @@
         //     "bannerImg1": "img/2.jpg"
         // }]
         var data = {
-                    "images": [{
-                        "bannerImg1": "img/4.jpg"
-                    }],
-                    "h1": [{
-                        "contentHVN1": "Thông tin sản phẩm",
-                        "contentHVN2": "Khuyến mãi",
-                        "contentHVN3": "Chỉ đường",
-                        "contentHEN1": "Product Information",
-                        "contentHEN2": "Sale",
-                        "contentHEN3": "Map",
+            "images": [{
+                "bannerImg1": "img/4.jpg"
+            }],
+            "h1": [{
+                "contentHVN1": "Thông tin sản phẩm",
+                "contentHVN2": "Khuyến mãi",
+                "contentHVN3": "Chỉ đường",
+                "contentHEN1": "Product Information",
+                "contentHEN2": "Sale",
+                "contentHEN3": "Map",
 
-                    }]
-                };
+            }]
+        };
         $(document).ready(function () {
             $(".change").click(function () {
-               
+
                 var x = event.target.id;
                 console.log(x);
                 if (x == "VN") {
-                    
-                    var y = "<h1 class='labelNav'id='lbNav1'>" +  data.h1[0].contentHVN1 + "</h1>"
-                    var y1 = "<h1 class='labelNav'id='lbNav2'>" +  data.h1[0].contentHVN2 + "</h1>"
-                    var y2= "<h1 class='labelNav' id='lbNav3'>" +  data.h1[0].contentHVN3 + "</h1>"
+
+                    var y = "<h1 class='labelNav'id='lbNav1'>" + data.h1[0].contentHVN1 + "</h1>"
+                    var y1 = "<h1 class='labelNav'id='lbNav2'>" + data.h1[0].contentHVN2 + "</h1>"
+                    var y2 = "<h1 class='labelNav' id='lbNav3'>" + data.h1[0].contentHVN3 + "</h1>"
                     console.log(y);
                     console.log(y1);
                     console.log(y2);
@@ -255,15 +256,15 @@
                     $("#lbNav3").replaceWith(y2);
                 }
                 else if (x == "EN") {
-                    var y = "<h1 class='labelNav'id='lbNav1'>" +   data.h1[0].contentHEN1 + "</h1>"
-                    var y1 = "<h1 class='labelNav'id='lbNav2'>" +  data.h1[0].contentHEN2 + "</h1>"
-                    var y2= "<h1 class='labelNav'id='lbNav3'>" +   data.h1[0].contentHEN3 + "</h1>"
+                    var y = "<h1 class='labelNav'id='lbNav1'>" + data.h1[0].contentHEN1 + "</h1>"
+                    var y1 = "<h1 class='labelNav'id='lbNav2'>" + data.h1[0].contentHEN2 + "</h1>"
+                    var y2 = "<h1 class='labelNav'id='lbNav3'>" + data.h1[0].contentHEN3 + "</h1>"
                     console.log(y);
                     $("#lbNav1").replaceWith(y);
                     $("#lbNav2").replaceWith(y1);
                     $("#lbNav3").replaceWith(y2);
                 }
-               
+
             });
         });
 
