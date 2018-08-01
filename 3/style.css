@@ -280,18 +280,24 @@ div.productColor{
 }
 
 .contentSale{
-    /* width:400px; */
+    width:75%;
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     color: #4c4343;
     display: flex;
+    float: left;
+    margin-top: 20px;
+    
 }
 
-/* .barCode{
+ .barCode{
+     width: 25%;
+     float: left;
+     line-height: 155px;
 }
 
-.barCode img {
+/*.barCode img {
     display: inline-block;
 } */
 
