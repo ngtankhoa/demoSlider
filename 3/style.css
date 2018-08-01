@@ -335,7 +335,7 @@ div.productColor{
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 40;
+    z-index: 3;
     /* Sit on top */
     padding-top: 100px;
     /* Location of the box */
@@ -349,7 +349,7 @@ div.productColor{
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(225, 223, 223, 0.9);
     /* Black w/ opacity */
 }
 
@@ -358,7 +358,7 @@ div.productColor{
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 650px;
 }
 
 /* Caption of Modal Image */
@@ -443,7 +443,7 @@ div.productColor{
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 40;
+    z-index:3;
     /* Sit on top */
     padding-top: 100px;
     /* Location of the box */
@@ -457,7 +457,7 @@ div.productColor{
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(225, 223, 223, 0.9);
     /* Black w/ opacity */
 }
 
