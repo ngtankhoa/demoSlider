@@ -5,12 +5,15 @@ body {
     font: normal 0.9em Arial;
     color: #223;
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
+    height: 100%;
 }
-
+html{
+    height: 100%;
+}
 header {
     display: block;
     font-size: 1.2em;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 header a,
@@ -141,7 +144,7 @@ div.fs-icon-2:hover {
     height: 300px;
     border: 2px solid rgb(228, 228, 215);
     background:gainsboro;
-    border-radius: 12%;
+    border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -156,7 +159,7 @@ div.fs-icon-2:hover {
     height: 100px; */
     border: 2px solid rgb(228, 228, 215);
     background:gainsboro;
-    border-radius: 12%;
+    border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
     display:flex;
@@ -166,7 +169,7 @@ div.fs-icon-2:hover {
 .infoProduct .details2 {
     border: 2px solid rgb(228, 228, 215);
     background:gainsboro;
-    border-radius: 12%;
+    border-radius: 12px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -209,7 +212,8 @@ select option {
 
 #main {
     width: 100%;
-    margin: 20px auto;
+    height: 100%;
+    /* margin: 20px auto; */
     padding: 20px;
     height: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
@@ -268,7 +272,19 @@ div.productColor{
     display: flex;
 }
 
+<<<<<<< HEAD
 /* .barCode{
+=======
+.barCode{
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.barCode img {
+    width: 100px;
+    height: 100px;
+>>>>>>> 0c83cc08305fe77d98a9cd671ac253fb2e03729f
 }
 
 .barCode img {
