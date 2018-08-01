@@ -229,10 +229,7 @@ select option {
     background: -webkit-gradient(linear, left top, left bottom, from( #ebe0e0), to(#a6a6a6)) fixed;
 }
 
-.details .description {
-    /* width: 250px; */
-    
-}
+
 
 div.description{
     display: inline-block;
@@ -246,10 +243,7 @@ div.description{
     color: #4c4343
 }
 
-.productColor {
-    /* width: 120px;
-    padding-top: 10px;    */
-}
+
 
 div.productColor{
     display: block;
