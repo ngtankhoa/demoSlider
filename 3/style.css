@@ -403,14 +403,25 @@ div.productColor{
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    /* top: 15px; */
+    /* right: 348px; */
+    width : 73%;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    z-index: 5;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    margin: auto;
+    display: block;
 }
-
+#btnCancel{
+    float: right;
+    padding: 5px;
+}
 .close:hover,
 .close:focus {
     color: #bbb;

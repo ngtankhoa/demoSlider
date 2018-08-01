@@ -190,8 +190,8 @@
                                     <!-- The Modal -->
                                     <div id="myModal" class="modal">
                                         <!-- <span class="close">&times;</span> -->
-                                        <span class="close"><img src="img/btn-cancel.png" alt="btnCancel"></span>
-                                        <img class="modal-content" id="img01" src="img/btn-cancel.png" alt="btnCancel">
+                                        <span class="close " ><img id="btnCancel"></span>
+                                        <img class="modal-content" id="img01" >
                                         <div id="caption"></div>
                                     </div>
                                 </div>
@@ -203,7 +203,7 @@
                                 <!-- The Modal -->
                                 <div id="myModal1" class="modal1">
                                     <!-- <span class="close1">&times;</span> -->
-                                    <span class="close1"><img src="img/btn-cancel.png" alt="btnCancel"></span>
+                                    <span class="close1"><img ></span>
                                     <img class="modal-content1" id="img02">
                                     <div id="caption1"></div>
                                 </div>
@@ -307,9 +307,12 @@
         var img = document.getElementById('myImg');
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
+        var BtnCancel = document.getElementById('btnCancel');
         img.onclick = function () {
             modal.style.display = "block";
-            modalImg.src = this.src;
+            // modalImg.src = this.src;
+            modalImg.src = "img/promotion-popup.png";
+            BtnCancel.src = "img/btn-cancel.png"
             captionText.innerHTML = this.alt;
         }
         // Get the <span> element that closes the modal
