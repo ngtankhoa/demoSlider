@@ -149,16 +149,16 @@
                             </li>
                         </ul>
 
-                        <div class="fs-icon-2" id="icon-1" onclick="openNav()">
-                            <img src="img/non.png" alt="sun">
+                        <div class="fs-icon-2" id="icon-1">
+                            <img class="fs" src="img/non.png" alt="non" id="icon1">
                         </div>
-                        <div class="fs-icon-2" id="icon-2" onclick="openNav()">
-                            <img src="img/ao.png" alt="red">
+                        <div class="fs-icon-2" id="icon-2">
+                            <img class="fs" src="img/ao.png" alt="ao" id="icon2">
                         </div>
-                        <div class="fs-icon-2" id="icon-3" onclick="openNav()">
-                            <img src="img/tuixach.png" alt="linux"> </div>
-                        <div class="fs-icon-2" id="icon-4" onclick="openNav()">
-                            <img src="img/giay.png" alt="gray">
+                        <div class="fs-icon-2" id="icon-3">
+                            <img class="fs" src="img/tuixach.png" alt="tuixach" id="icon3"> </div>
+                        <div class="fs-icon-2" id="icon-4">
+                            <img class="fs" src="img/giay.png" alt="giay" id="icon4">
                         </div>
                     </div>
                 </div>
@@ -228,7 +228,7 @@
                     <div id="myModal1" class="modal1">
                         <!-- <span class="close1">&times;</span> -->
                         <span class="close1">
-                            <img>
+                            <img id="btnCancel1">
                         </span>
                         <img class="modal-content1" id="img02">
                         <div id="caption1"></div>
@@ -250,7 +250,10 @@
         // }]
         var data = {
             "images": [{
-                "bannerImg1": "img/4.jpg"
+                "bannerImg1": "img/non.png",
+                "bannerImg2": "img/ao.png",
+                "bannerImg3": "img/tuixach.png",
+                "bannerImg4": "img/giay.png"
             }],
             "h1": [{
                 "contentHVN1": "Thông tin sản phẩm",
@@ -336,6 +339,7 @@
             modalImg.src = "img/promotion-popup.png";
             BtnCancel.src = "img/btn-cancel.png"
             captionText.innerHTML = this.alt;
+            setTimeout(span.onclick, 30000);
         }
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -350,39 +354,80 @@
         var img1 = document.getElementById('myImg1');
         var modalImg1 = document.getElementById("img02");
         var captionText1 = document.getElementById("caption1");
+        var BtnCancel1 = document.getElementById('btnCancel1');
         img1.onclick = function () {
             modal1.style.display = "block";
-            modalImg1.src = this.src;
+            modalImg1.src = "img/map.png";
+            BtnCancel1.src = "img/btn-cancel.png"
             captionText1.innerHTML = this.alt;
+            setTimeout(span1.onclick, 30000);
         }
         // Get the <span> element that closes the modal
         var span1 = document.getElementsByClassName("close1")[0];
         // When the user clicks on <span> (x), close the modal
         span1.onclick = function () {
             modal1.style.display = "none";
+
         }
 
         $(document).ready(function () {
             $(".choosen").click(function () {
                 var x = event.target.id;
-                console.log(x);
+
                 if (x == "img1") {
-                    $("#changeColor").attr("src", "img/1.jpg");
+                    $("#changeColor").attr("src", "img/giay.png");
                     $("#img1").css("border", "1px solid black");
                     $("#img2").css("border", "1px solid #dadada");
                     $("#img3").css("border", "1px solid #dadada");
                 }
                 else if (x == "img2") {
-                    $("#changeColor").attr("src", "img/2.jpg");
+                    $("#changeColor").attr("src", "img/tuixach.png");
                     $("#img2").css("border", "1px solid black");
                     $("#img1").css("border", "1px solid #dadada");
                     $("#img3").css("border", "1px solid #dadada");
                 }
                 else if (x == "img3") {
-                    $("#changeColor").attr("src", "img/3.jpg");
+                    $("#changeColor").attr("src", "img/non.png");
                     $("#img3").css("border", "1px solid black");
                     $("#img2").css("border", "1px solid #dadada");
                     $("#img1").css("border", "1px solid #dadada");
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $(".fs").click(function () {
+                var y = event.target.id;
+                var img = new Image();
+                
+                console.log(img.src);
+                console.log(y);
+                setTimeout(closeNav, 30000);
+                document.getElementById("mySidenav").style.width = "520px";
+                // document.getElementsByClassName("col-md-10").style.marginRight = "520px";
+                if (y == "icon1") {
+                   
+                    img.src = data.images[0].bannerImg1;
+                    console.log(img.src);
+                    $("#changeColor").attr("src", img.src);
+                }
+                else if (y == "icon2") {
+                    
+                    img.src = data.images[0].bannerImg2;
+                    console.log(img.src);
+                    $("#changeColor").attr("src", img.src);
+                }
+                else if (y == "icon3") {
+                    
+                    img.src = data.images[0].bannerImg3;
+                    console.log(img.src);
+                    $("#changeColor").attr("src", img.src);
+                }
+                else if (y == "icon4") {
+                    
+                    img.src = data.images[0].bannerImg4;
+                    console.log(img.src);
+                    $("#changeColor").attr("src", img.src);
                 }
             });
         });
