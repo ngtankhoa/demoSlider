@@ -228,7 +228,7 @@
                     <div id="myModal1" class="modal1">
                         <!-- <span class="close1">&times;</span> -->
                         <span class="close1">
-                            <img>
+                            <img id="btnCancel1">
                         </span>
                         <img class="modal-content1" id="img02">
                         <div id="caption1"></div>
@@ -250,7 +250,7 @@
         // }]
         var data = {
             "images": [{
-                "bannerImg1": "img/4.jpg"
+                "bannerImg1": "img/ao.png"
             }],
             "h1": [{
                 "contentHVN1": "Thông tin sản phẩm",
@@ -350,9 +350,11 @@
         var img1 = document.getElementById('myImg1');
         var modalImg1 = document.getElementById("img02");
         var captionText1 = document.getElementById("caption1");
+        var BtnCancel1 = document.getElementById('btnCancel1');
         img1.onclick = function () {
             modal1.style.display = "block";
-            modalImg1.src = this.src;
+            modalImg1.src = "img/map.png";
+            BtnCancel1.src = "img/btn-cancel.png"
             captionText1.innerHTML = this.alt;
         }
         // Get the <span> element that closes the modal
@@ -367,19 +369,19 @@
                 var x = event.target.id;
                 console.log(x);
                 if (x == "img1") {
-                    $("#changeColor").attr("src", "img/1.jpg");
+                    $("#changeColor").attr("src", "img/giay.png");
                     $("#img1").css("border", "1px solid black");
                     $("#img2").css("border", "1px solid #dadada");
                     $("#img3").css("border", "1px solid #dadada");
                 }
                 else if (x == "img2") {
-                    $("#changeColor").attr("src", "img/2.jpg");
+                    $("#changeColor").attr("src", "img/tuixach.png");
                     $("#img2").css("border", "1px solid black");
                     $("#img1").css("border", "1px solid #dadada");
                     $("#img3").css("border", "1px solid #dadada");
                 }
                 else if (x == "img3") {
-                    $("#changeColor").attr("src", "img/3.jpg");
+                    $("#changeColor").attr("src", "img/non.png");
                     $("#img3").css("border", "1px solid black");
                     $("#img2").css("border", "1px solid #dadada");
                     $("#img1").css("border", "1px solid #dadada");
