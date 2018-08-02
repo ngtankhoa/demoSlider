@@ -1,6 +1,6 @@
 function openNav() {
     setTimeout(closeNav, 30000);
-    document.getElementById("mySidenav").style.width = "520px";
+    document.getElementById("mySidenav").style.width = "27%";
     document.getElementsByClassName("row")[0].style.marginRight = "15%";
 }
 
