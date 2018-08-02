@@ -160,7 +160,7 @@ div.fs-icon-2:hover {
 }
 
 .infoProduct{
-    height: 1080px;
+    height: 100%;
 }
 
 .infoProduct .details {
@@ -175,7 +175,7 @@ div.fs-icon-2:hover {
     margin-right: 25px;
     margin-top: 12px;
     margin-bottom: 18px;
-    line-height: 365px;
+    
 }
 
 .infoProduct .labelNav {
@@ -265,14 +265,15 @@ div.description{
     font-size: 12px;
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 5px auto;
-    color: #4c4343
+    /* margin: 5px auto; */
+    color: #4c4343;
+    display: inline-block;
 }
 
 
 
 div.productColor{
-    display: block;
+    display: inline-block;
 }
 
 .contain{
@@ -290,6 +291,8 @@ div.productColor{
     text-align: initial;
     line-height: normal;
     /* margin-top: 60px; */
+    border: 1px solid black;
+    height: 100%;
     
     
    
@@ -303,7 +306,8 @@ div.productColor{
     width: 35%;
     float: left;
     padding: 15px;
-   
+    border: 1px solid black;
+    height: 100%;
     
 }
 
