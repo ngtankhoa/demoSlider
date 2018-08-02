@@ -1,7 +1,7 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "520px";
-    document.getElementById("ninja-slider").style.marginLeft = "20px";
     setTimeout(closeNav, 30000);
+    document.getElementById("mySidenav").style.width = "520px";
+    document.getElementsByClassName("col-md-10").style.marginRight = "520px";
 }
 
 function closeNav() {

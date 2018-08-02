@@ -15,31 +15,26 @@
 
     <!-- include Ninja-slider -->
     <link href="3/ninja-slider.css" rel="stylesheet" />
-    <link href="3/ninja-slider.css" rel="stylesheet" />
-    <script src="3/ninja-slider.js"></script>
     <script src="3/ninja-slider.js"></script>
     <link href="3/thumbnail-slider.css" rel="stylesheet" type="text/css" />
-    <link href="3/thumbnail-slider.css" rel="stylesheet" type="text/css" />
-    <link href="3/style.css" rel="stylesheet" type="text/css" />
-    <script src="3/thumbnail-slider.js" type="text/javascript"></script>
     <script src="3/thumbnail-slider.js" type="text/javascript"></script>
 
     <!-- include style.css -->
-    <!-- <link rel="stylesheet" type="text/css" href="3/style.css"> -->
+    <link href="3/style.css" rel="stylesheet" type="text/css" />
 
     <!-- include myscript.js -->
     <script src="3/myscript.js"></script>
 
 </head>
 
-<body style="background:blue;">
-    <div id="main" class="container-fluid" style="background: red;">
-        <div class="row" style="height: 100%; margin-top: 100px; margin-bottom: 80px;">
-            <div class="col-md-3" style="padding-right: 0px;">
-                <div id="thumbnail-slider">
+<body style="background:orange;">
+    <div id="main" class="container-fluid">
+        <div class="row" style="height: 100%;">
+            <div class="col-md-2 test">
+                <div class="test" id="thumbnail-slider">
                     <div class="inner">
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <a class="thumb" href="img/13.jpg"></a>
                             </li>
                             <li>
@@ -74,25 +69,37 @@
                             </li>
                             <li>
                                 <a class="thumb" href="img/12.jpg"></a>
+                            </li> -->
+                            <li>
+                                <a class="thumb" href="img/slider1.png"></a>
                             </li>
+                            <li>
+                                <a class="thumb" href="img/slider2.png"></a>
+                            </li>
+                            <li>
+                                <a class="thumb" href="img/slider3.png"></a>
+                            </li>
+                            <li>
+                                <a class="thumb" href="img/slider4.png"></a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
-                <div class="changeLanguage" id="langugage">
-                    <div class="button">
+                <div class="changeLanguage test" id="langugage">
+                    <div class="button" style="margin-bottom: 10px;">
                         <button class="change" id="VN">TIẾNG VIỆT</button>
                     </div>
-                    <div class="button">
+                    <div class="button" style="margin-top: 10px;">
                         <button class="change" id="EN">ENGLISH</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-7 vertical-center" style="background: yellow;">
-                <div id="ninja-slider" style="margin: 20px auto; ">
+            <div class="col-md-10 vertical-center">
+                <div id="ninja-slider" style="max-height: 900px;">
                     <div class="slider-inner">
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <a class="ns-img" href="img/13.jpg"></a>
                             </li>
                             <li>
@@ -127,93 +134,108 @@
                             </li>
                             <li>
                                 <a class="ns-img" href="img/12.jpg"></a>
+                            </li> -->
+                            <li>
+                                <a class="ns-img" href="img/model.png"></a>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="img/model2.png"></a>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="img/model3.png"></a>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="img/model4.png"></a>
                             </li>
                         </ul>
 
                         <div class="fs-icon-2" id="icon-1" onclick="openNav()">
-                            <img src="img/sun.jpg" alt="sun">
+                            <img src="img/non.png" alt="sun">
                         </div>
                         <div class="fs-icon-2" id="icon-2" onclick="openNav()">
-                            <img src="img/red.jpg" alt="red">
+                            <img src="img/ao.png" alt="red">
                         </div>
                         <div class="fs-icon-2" id="icon-3" onclick="openNav()">
-                            <img src="img/linux.png" alt="linux"> </div>
+                            <img src="img/tuixach.png" alt="linux"> </div>
                         <div class="fs-icon-2" id="icon-4" onclick="openNav()">
-                            <img src="img/gray_v2.svg.png" alt="gray">
+                            <img src="img/giay.png" alt="gray">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-2">
-                <div id="mySidenav" class="sidenav">
-                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/btn-cancel-selected.png" alt="btnCancel"></a>
-                    <section class="infoProduct">
-                        <p class="labelNav" id="lbNav1">THÔNG TIN SẢN PHẨM</p>
-                        <div class="details">
-
-                            <div class="imageProduct" id="loadJsonP">
-                                <!-- <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor"> -->
-                            </div>
-                            <div class="testKhoi">
-                                <div class="productColor">
-                                    <span class="choosen" style="background-color: blue;" id="img1"></span>
-                                    <span class="choosen" style="background-color: red;" id="img2"></span>
-                                    <span class="choosen" style="background-color: yellow;" id="img3"></span>
-                                </div>
-                                <div class="description">
-                                    <h3>Váy</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                        has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer took a galley of type and scrambled it to make a type specimen book. It has
-                                        survived not only five centuries, but also the leap into electronic typesetting,
-                                        remaining essentially unchanged.
-                                    </p>
-
-                                </div>
-
-
-                                <div class="productPrice">
-                                    <p>25000VND</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="labelNav" id="lbNav2">KHUYẾN MÃI</p>
-                        <div class="details1">
-                                <div class="contentSale">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                        has been the industry's standard dummy </p>
-                                </div>
-                                <div class="barCode align-middle">
-                                    <img src="img/code.jpg" alt="barCode" id="myImg" width = "100px" height = "100px">
-                                    <!-- The Modal -->
-                                    <div id="myModal" class="modal">
-                                        <!-- <span class="close">&times;</span> -->
-                                        <span class="close " ><img id="btnCancel"></span>
-                                        <img class="modal-content" id="img01" >
-                                        <div id="caption"></div>
-                                    </div>
-                                </div>
-                        </div>
-                        <p class="labelNav" id="lbNav3">CHỈ ĐƯỜNG</p>
-                        <div class="details2">
-                            <div class="Map">
-                                <img  src="img/map-sidebar.png" alt="mapsidebar" width="430px;" height="230px;" id="myImg1">
-                                <!-- The Modal -->
-                                <div id="myModal1" class="modal1">
-                                    <!-- <span class="close1">&times;</span> -->
-                                    <span class="close1"><img ></span>
-                                    <img class="modal-content1" id="img02">
-                                    <div id="caption1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
             <div style="clear:both;"></div>
         </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img src="img/btn-cancel-selected.png" alt="btnCancel">
+        </a>
+        <section class="infoProduct">
+            <p class="labelNav" id="lbNav1">THÔNG TIN SẢN PHẨM</p>
+            <div class="details">
+
+                <div class="imageProduct" id="loadJsonP">
+                    <!-- <img src="img/1.jpg" alt="h1" width="130px" height="220px" id="changeColor"> -->
+                </div>
+                <div class="testKhoi">
+                    <div class="productColor">
+                        <span class="choosen" style="background-color: blue;" id="img1"></span>
+                        <span class="choosen" style="background-color: red;" id="img2"></span>
+                        <span class="choosen" style="background-color: yellow;" id="img3"></span>
+                    </div>
+                    <div class="description">
+                        <h3>Váy</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+
+                    </div>
+
+
+                    <div class="productPrice">
+                        <p>25000VND</p>
+                    </div>
+                </div>
+            </div>
+            <p class="labelNav" id="lbNav2">KHUYẾN MÃI</p>
+            <div class="details1">
+                <div class="contentSale">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy </p>
+                </div>
+                <div class="barCode align-middle">
+                    <img src="img/code.jpg" alt="barCode" id="myImg" width="100px" height="100px">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- <span class="close">&times;</span> -->
+                        <span class="close ">
+                            <img id="btnCancel">
+                        </span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="labelNav" id="lbNav3">CHỈ ĐƯỜNG</p>
+            <div class="details2">
+                <div class="Map">
+                    <img src="img/map-sidebar.png" alt="mapsidebar" width="430px;" height="230px;" id="myImg1">
+                    <!-- The Modal -->
+                    <div id="myModal1" class="modal1">
+                        <!-- <span class="close1">&times;</span> -->
+                        <span class="close1">
+                            <img>
+                        </span>
+                        <img class="modal-content1" id="img02">
+                        <div id="caption1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <!--end-->
 
@@ -227,29 +249,29 @@
         //     "bannerImg1": "img/2.jpg"
         // }]
         var data = {
-                    "images": [{
-                        "bannerImg1": "img/4.jpg"
-                    }],
-                    "h1": [{
-                        "contentHVN1": "Thông tin sản phẩm",
-                        "contentHVN2": "Khuyến mãi",
-                        "contentHVN3": "Chỉ đường",
-                        "contentHEN1": "Product Information",
-                        "contentHEN2": "Sale",
-                        "contentHEN3": "Map",
+            "images": [{
+                "bannerImg1": "img/4.jpg"
+            }],
+            "h1": [{
+                "contentHVN1": "Thông tin sản phẩm",
+                "contentHVN2": "Khuyến mãi",
+                "contentHVN3": "Chỉ đường",
+                "contentHEN1": "Product Information",
+                "contentHEN2": "Sale",
+                "contentHEN3": "Map",
 
-                    }]
-                };
+            }]
+        };
         $(document).ready(function () {
             $(".change").click(function () {
-               
+
                 var x = event.target.id;
                 console.log(x);
                 if (x == "VN") {
-                    
-                    var y = "<h1 class='labelNav'id='lbNav1'>" +  data.h1[0].contentHVN1 + "</h1>"
-                    var y1 = "<h1 class='labelNav'id='lbNav2'>" +  data.h1[0].contentHVN2 + "</h1>"
-                    var y2= "<h1 class='labelNav' id='lbNav3'>" +  data.h1[0].contentHVN3 + "</h1>"
+
+                    var y = "<h1 class='labelNav'id='lbNav1'>" + data.h1[0].contentHVN1 + "</h1>"
+                    var y1 = "<h1 class='labelNav'id='lbNav2'>" + data.h1[0].contentHVN2 + "</h1>"
+                    var y2 = "<h1 class='labelNav' id='lbNav3'>" + data.h1[0].contentHVN3 + "</h1>"
                     console.log(y);
                     console.log(y1);
                     console.log(y2);
@@ -258,15 +280,15 @@
                     $("#lbNav3").replaceWith(y2);
                 }
                 else if (x == "EN") {
-                    var y = "<h1 class='labelNav'id='lbNav1'>" +   data.h1[0].contentHEN1 + "</h1>"
-                    var y1 = "<h1 class='labelNav'id='lbNav2'>" +  data.h1[0].contentHEN2 + "</h1>"
-                    var y2= "<h1 class='labelNav'id='lbNav3'>" +   data.h1[0].contentHEN3 + "</h1>"
+                    var y = "<h1 class='labelNav'id='lbNav1'>" + data.h1[0].contentHEN1 + "</h1>"
+                    var y1 = "<h1 class='labelNav'id='lbNav2'>" + data.h1[0].contentHEN2 + "</h1>"
+                    var y2 = "<h1 class='labelNav'id='lbNav3'>" + data.h1[0].contentHEN3 + "</h1>"
                     console.log(y);
                     $("#lbNav1").replaceWith(y);
                     $("#lbNav2").replaceWith(y1);
                     $("#lbNav3").replaceWith(y2);
                 }
-               
+
             });
         });
 
@@ -366,4 +388,3 @@
         });
     </script>
 </body>
-
