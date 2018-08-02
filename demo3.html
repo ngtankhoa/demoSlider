@@ -336,6 +336,7 @@
             modalImg.src = "img/promotion-popup.png";
             BtnCancel.src = "img/btn-cancel.png"
             captionText.innerHTML = this.alt;
+            setTimeout(span.onclick,30000);
         }
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -356,12 +357,14 @@
             modalImg1.src = "img/map.png";
             BtnCancel1.src = "img/btn-cancel.png"
             captionText1.innerHTML = this.alt;
+            setTimeout(span1.onclick,30000);
         }
         // Get the <span> element that closes the modal
         var span1 = document.getElementsByClassName("close1")[0];
         // When the user clicks on <span> (x), close the modal
         span1.onclick = function () {
             modal1.style.display = "none";
+            
         }
 
         $(document).ready(function () {
