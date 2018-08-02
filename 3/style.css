@@ -207,11 +207,15 @@ div.fs-icon-2:hover {
     margin-bottom: 18px;
     width: 90%;
     height: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .Map {
    
-    display: inline-block;
+    /* display: inline-block; */
+    width: 90%;
+    margin: auto;
 }
 
 select option {
