@@ -2,7 +2,7 @@
 
 /*---------------------------- Thumbnails ----------------------------*/
 #thumbnail-slider {    
-    height:60%; 
+    height:70%; 
     width: 40%;
     display:inline-block;
     padding:20px 0; /*Increse its value if want to move the arrows out of the div.inner */
