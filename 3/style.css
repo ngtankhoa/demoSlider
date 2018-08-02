@@ -159,11 +159,15 @@ div.fs-icon-2:hover {
     margin-left: 50px;
 }
 
+.infoProduct{
+    height: 1080px;
+}
+
 .infoProduct .details {
     width: 90%;
     /* 36% */
-    height: 395px;  
-    /* max-height: 36%; */
+    /* height: 395px;   */
+    height: 36%;
     border: 2px solid rgb(228, 228, 215);
     background:gainsboro;
     border-radius: 12px;
@@ -181,7 +185,7 @@ div.fs-icon-2:hover {
 
 .infoProduct .details1 {
     width: 90%;
-    height: 155px;
+    height: 14.5%;
     border: 2px solid rgb(228, 228, 215);
     background:gainsboro;
     border-radius: 12px;
@@ -202,7 +206,7 @@ div.fs-icon-2:hover {
     margin-top: 18px;
     margin-bottom: 18px;
     width: 90%;
-    height: 252px;
+    height: 23%;
 }
 
 .Map {
