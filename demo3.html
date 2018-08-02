@@ -30,8 +30,11 @@
 <body style="background:orange;">
     <div id="main" class="container-fluid">
         <div class="row no-gutters" style="height: 100%;">
-            <div class="col-sm-2 test">
-                <div class="mx-auto test" id="thumbnail-slider">
+            <div class="col-sm-2 test" style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;">
+                <div class="mx-auto test" id="thumbnail-slider" style="margin-top: 25%">
                     <div class="inner">
                         <ul>
                             <!-- <li>
@@ -96,7 +99,7 @@
             </div>
 
             <div class="col-sm-10 vertical-center">
-                <div class="test" id="ninja-slider" style="max-height: 900px;">
+                <div class="test" id="ninja-slider" style="max-height: 900px; margin-right: 10%">
                     <div class="slider-inner">
                         <ul>
                             <!-- <li>
@@ -399,32 +402,32 @@
             $(".fs").click(function () {
                 var y = event.target.id;
                 var img = new Image();
-                
+
                 console.log(img.src);
                 console.log(y);
                 setTimeout(closeNav, 30000);
                 document.getElementById("mySidenav").style.width = "520px";
-                // document.getElementsByClassName("col-md-10").style.marginRight = "520px";
+                document.getElementById("ninja-slider").style.marginRight="25%";
                 if (y == "icon1") {
-                   
+
                     img.src = data.images[0].bannerImg1;
                     console.log(img.src);
                     $("#changeColor").attr("src", img.src);
                 }
                 else if (y == "icon2") {
-                    
+
                     img.src = data.images[0].bannerImg2;
                     console.log(img.src);
                     $("#changeColor").attr("src", img.src);
                 }
                 else if (y == "icon3") {
-                    
+
                     img.src = data.images[0].bannerImg3;
                     console.log(img.src);
                     $("#changeColor").attr("src", img.src);
                 }
                 else if (y == "icon4") {
-                    
+
                     img.src = data.images[0].bannerImg4;
                     console.log(img.src);
                     $("#changeColor").attr("src", img.src);
