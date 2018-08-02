@@ -80,23 +80,24 @@ div.fs-icon-2 img {
 
 /* positon for each icon divide by #ID */
 #icon-1 {
-    bottom: 20px;
-    right: 30px;
+    top: 20px;
+    left: 200px;
+    /* margin-left: 200px; */
 }
 
 #icon-2 {
-    top: 50px;
-    right: 20px;
+    top: 100px;
+    right: 150px;
 }
 
 #icon-3 {
-    top: 40px;
-    left: 20px;
+    top: 200px;
+    left:20px;
 }
 
 #icon-4 {
-    bottom: 60px;
-    left: 30px;
+    bottom: 50px;
+    right:100px;
 }
 
 /* #icon-5 {
