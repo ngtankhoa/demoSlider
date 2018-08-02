@@ -206,11 +206,11 @@ div.fs-icon-2:hover {
     margin-top: 18px;
     margin-bottom: 18px;
     width: 90%;
-    height: 23%;
+    height: 30%;
 }
 
 .Map {
-    margin: 30px;
+   
     display: inline-block;
 }
 
@@ -312,15 +312,14 @@ div.productColor{
 }
 
 .contentSale{
-    width:65%;
+    width:75%;
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     color: #4c4343;
-    display: flex;
+    /* display: flex; */
     float: left;
-    overflow: auto;
-    
+   
     
 }
 
