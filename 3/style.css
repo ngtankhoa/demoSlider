@@ -291,7 +291,7 @@ div.productColor{
     text-align: initial;
     line-height: normal;
     /* margin-top: 60px; */
-    border: 1px solid black;
+    
     height: 100%;
     
     
@@ -306,7 +306,7 @@ div.productColor{
     width: 35%;
     float: left;
     padding: 15px;
-    border: 1px solid black;
+   
     height: 100%;
     
 }
