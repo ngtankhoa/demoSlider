@@ -259,12 +259,12 @@
                 "bannerImg4": "img/giay.png"
             }],
             "h1": [{
-                "contentHVN1": "Thông tin sản phẩm",
-                "contentHVN2": "Khuyến mãi",
-                "contentHVN3": "Chỉ đường",
-                "contentHEN1": "Product Information",
-                "contentHEN2": "Sale",
-                "contentHEN3": "Map",
+                "contentHVN1": "THÔNG TIN SẢN PHẨM",
+                "contentHVN2": "KHUYẾN MÃI",
+                "contentHVN3": "CHỈ ĐƯỜNG",
+                "contentHEN1": "PRODUCT INFORMATION",
+                "contentHEN2": "SALE",
+                "contentHEN3": "MAP",
 
             }]
         };
@@ -275,9 +275,9 @@
                 console.log(x);
                 if (x == "VN") {
 
-                    var y = "<h1 class='labelNav'id='lbNav1'>" + data.h1[0].contentHVN1 + "</h1>"
-                    var y1 = "<h1 class='labelNav'id='lbNav2'>" + data.h1[0].contentHVN2 + "</h1>"
-                    var y2 = "<h1 class='labelNav' id='lbNav3'>" + data.h1[0].contentHVN3 + "</h1>"
+                    var y = "<p class='labelNav'id='lbNav1'>" + data.h1[0].contentHVN1 + "</p>"
+                    var y1 = "<p class='labelNav'id='lbNav2'>" + data.h1[0].contentHVN2 + "</p>"
+                    var y2 = "<p class='labelNav' id='lbNav3'>" + data.h1[0].contentHVN3 + "</p>"
                     console.log(y);
                     console.log(y1);
                     console.log(y2);
@@ -286,9 +286,9 @@
                     $("#lbNav3").replaceWith(y2);
                 }
                 else if (x == "EN") {
-                    var y = "<h1 class='labelNav'id='lbNav1'>" + data.h1[0].contentHEN1 + "</h1>"
-                    var y1 = "<h1 class='labelNav'id='lbNav2'>" + data.h1[0].contentHEN2 + "</h1>"
-                    var y2 = "<h1 class='labelNav'id='lbNav3'>" + data.h1[0].contentHEN3 + "</h1>"
+                    var y = "<p class='labelNav'id='lbNav1'>" + data.h1[0].contentHEN1 + "</p>"
+                    var y1 = "<p class='labelNav'id='lbNav2'>" + data.h1[0].contentHEN2 + "</p>"
+                    var y2 = "<p class='labelNav'id='lbNav3'>" + data.h1[0].contentHEN3 + "</p>"
                     console.log(y);
                     $("#lbNav1").replaceWith(y);
                     $("#lbNav2").replaceWith(y1);
